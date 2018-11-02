@@ -87,7 +87,10 @@ var boneIcon = L.icon({
   var customMeitner3 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Lise_Meitner'>Lise Meitner</a>| Humboldt University of Berlin (1905) </b><br> Moving to the university formerly known as Friedrich Wilhelm University in 1907, Meitner met Albert Einstein, Max Planck, and Otto Hahn, with whom she would collaborate with greatly in the future <img src='images/HumboldtUniversity1900.jpg' alt='h1990u' width='350px'/>" 
   var customLubinska1 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Liliana_Lubi%C5%84ska'>Liliana Lubinska</a>| Birth Place </b><br> Luliana Lubinska  was born 14 October 1904 in Łódź, Poland <img src='images/Łódź.jpg' alt='h1990u' width='350px'/>" 
   var customLubinska2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Liliana_Lubi%C5%84ska'>Liliana Lubinska</a>| University of Warsaw (1923) </b><br> Lubińska entered the University of Warsaw to study biology in 1923, but a year later she transferred to the University of Paris, Sorbonne to continue her study of biological sciences <img src='images/universityofwarsaw.JPG' alt='lmbv' width='350px'/>"
-
+ var customMcurie1 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Marie_Curie'>Marie Curie</a>| Birth Place </b><br> Marie Curie was born 7 November 1867 in Warsaw, Poland (then Warsaw, Congress of Poland, Russian Empire <img src='MRC.jpg' alt='warsaw3' width='350px'/>" 
+  var customMcurie2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Marie_Curie'>Marie Curie'></a> ESPCI Paris</b><br> A shed nex to the School of Physics and Chemistry was where the Curies conducted a majority of their research. Here, Marie Curie conducted many systematic studies, including one in which she discovered that the element thorium was also radioactive <img src='ESPCIParis.jpg' alt='paris' width='350px'/>" 
+   var customIcurie1 = "<b>.</b><a href='https://www.nobelprize.org/prizes/chemistry/1935/joliot-curie/biographical/'>Irène Joliot-Curie</a>| Birth Place </b><br> Birth Place</b><br> Irène Joliot-Curie was born 12 September 1897 in Paris, France <img src='eiffel-tower-paris-p.jpg' alt='h1990u' width='350px'/>" 
+    var customIcurie2 = "<b>.</b><a href='https://www.nobelprize.org/prizes/chemistry/1935/joliot-curie/biographical/'>Irène Joliot-Curie</a>| Curie Institute</b><br>Joliot-Curie studied at the Radium Institute, built after her parents, after World War I. Here, she received her PhD in Science after completing her thesis about thesis the alpha decay of polonium. Here, she also conducted a lot of her future research, including discovering artificial radioactivity, alongside her husband, Jean Frédéric Joliot-Curie. This discovery led to the Nobel Prize Chemistry in 1935 <img src='CurieInstitute1919_IreneandMarie.jpg' alt='mandi' width='350px'/>" 
   
   
   
@@ -97,17 +100,14 @@ var boneIcon = L.icon({
     /* Display a blue point marker with pop-up text */
 /*Irène Joliot-Curie*/
   L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
-  .bindPopup("<b>Irène Joliot-Curie | Birth Place</b><br> Irène Joliot-Curie was born 12 September 1897 in Paris, France.")
+  .bindPopup(customIcurie1,customOptions);
   L.marker([48.843333, 2.344167], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Irène Joliot-Curie | Curie Institute</b><br>Joliot-Curie studied at the Radium Institute, built after her parents, after World War I. Here, she received her PhD in Science after completing her thesis about thesis the alpha decay of polonium. Here, she also conducted a lot of her future research, including discovering artificial radioactivity, alongside her husband, Jean Frédéric Joliot-Curie. This discovery led to the Nobel Prize Chemistry in 1935.")
-/*Marie Skłodowska Curie*/
+  .bindPopup(customIcurie2,customOptions);
+             /*Marie Skłodowska Curie*/
 L.marker([52.2297, 21.0122], {icon: houseIcon}).addTo(map)
-  .bindPopup("<b>Marie Curie | Birth Place</b><br> Marie Curie was born 7 November 1867 in Warsaw, Poland (then Warsaw, Congress of Poland, Russian Empire.")
+  .bindPopup(customMcurie1,customOptions);
 L.marker ([48.841389, 2.346944], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Marie Curie | ESPCI Paris</b><br> A shed nex to the School of Physics and Chemistry was where the Curies conducted a majority of their research. Here, Marie Curie conducted many systematic studies, including one in which she discovered that the element thorium was also radioactive.")
-L.marker ([48.848611, 2.343333], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Marie Curie | The University of Paris</b><br> In 1903 Curie received her doctorate from the University of Paris. That same year, the Curies were invited to speak at the Royal Institution of London about radioactivity; however, Marie Curie was not allowed to present due the absured patriarchical mandate banning women from speaking. Only Pierre Curie could share their research.")
-
+  .bindPopup(customMcurie2,customOptions);
 /*Lise Meitner*/
 L.marker([48.2172, 16.3912], {icon: houseIcon}).addTo(map)
   .bindPopup(customMeitner1,customOptions);
