@@ -73,6 +73,7 @@ var boneIcon = L.icon({
         'maxWidth': '500',
         'className' : 'custom'
         }
+    var customSzumiel1 = "Irena Szumiel | University of Warsaw  (1960-1965) </b><br> From 1960 to 1968, she worked at the Department of Biochemistry at the University of Warsaw, then became a research fellow at the Institute of Nuclear Research , and in 1982 the Institute of Nuclear Chemistry and Technology established on its basis..<img src='images/universityofwarsaw.jpg' alt='test' width='350px'/>"
   /* Display a blue point marker with pop-up text */
 /*Irène Joliot-Curie*/
   L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
@@ -128,7 +129,7 @@ L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
   L.marker([52.1356, 0.0030], {icon: houseIcon}).addTo(map)
   .bindPopup("<b>Irena Szumiel | Birth Place</b><br> Irena Szumiel was born 10 February, 1936 in Warsaw, Poland.");
   L.marker([52.1425, 0.0109], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Irena Szumiel | University of Warsaw  (1960-1965) </b><br> From 1960 to 1968, she worked at the Department of Biochemistry at the University of Warsaw, then became a research fellow at the Institute of Nuclear Research , and in 1982 the Institute of Nuclear Chemistry and Technology established on its basis..");
+  .bindPopup(customSzumiel1,customOptions);
   
   /*Rosalind Franklin*/
   L.marker([51.3026, -0.0739], {icon: houseIcon}).addTo(map)
