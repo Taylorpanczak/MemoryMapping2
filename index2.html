@@ -84,7 +84,7 @@ var boneIcon = L.icon({
   var customGleditsh2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Ellen_Gleditsch'>Ellen Gleditsch</a> | Sorbonne (1905) </b><br> She Studied at the Sorbonne and work in Marie Curie's laboratory from 1907 to 1912 <img src='images/Sorbonne.jpg' alt='sorbonne' width='350px'/>"
    var customMeitner1 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Lise_Meitner'>Lise Meitner</a>| Birth Place</b><br> Elise Meitner was born 7 November 1878 in Leopoldstadt, Vienna <img src='images/LMBirthplaceVienna.jpeg' alt='lmbv' width='350px'/>"
   var customMeitner2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Lise_Meitner'>Lise Meitner</a>| University of Vienna (1905) </b><br> Meitner became the second woman to receive her doctorate in Physics at the University in 1905 <img src='images/universityofv.jpg' alt='lmbv' width='350px'/>"
-  
+  var customMeitner3 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Lise_Meitner'>Lise Meitner</a>| Humboldt University of Berlin (1905) </b><br> Moving to the university formerly known as Friedrich Wilhelm University in 1907, Meitner met Albert Einstein, Max Planck, and Otto Hahn, with whom she would collaborate with greatly in the future <img src='HumboldtUniversity1900.jpg' alt='h1990u' width='350px'/>" 
   
   
     /* Display a blue point marker with pop-up text */
@@ -105,9 +105,9 @@ L.marker ([48.848611, 2.343333], {icon: boneIcon}).addTo(map)
 L.marker([48.2172, 16.3912], {icon: houseIcon}).addTo(map)
   .bindPopup(customMeitner1,customOptions);
 L.marker([48.2132, 16.3601], {icon: boneIcon}).addTo(map)
-  .bindPopup(ustomMeitner2,customOptions);
+  .bindPopup(customMeitner2,customOptions);
 L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Lise Meitner | Humboldt University of Berlin (1905) </b><br> Moving to the university formerly known as Friedrich Wilhelm University in 1907, Meitner met Albert Einstein, Max Planck, and Otto Hahn, with whom she would collaborate with greatly in the future.");
+  .bindPopup(customMeitner3,customOptions);
  L.marker([48.5055, 2.2036], {icon: boneIcon}).addTo(map)
   .bindPopup("<b>Liliana Lubinska| Sorbonne </b><br> At Sorbonne she continued her study of biological sciences.");
   
