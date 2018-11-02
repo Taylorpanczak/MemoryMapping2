@@ -78,6 +78,8 @@ var boneIcon = L.icon({
     var customSzumiel1 = "<b>.</b><a href='https://pl.wikipedia.org/wiki/Irena_Szumiel'>Irena Szumiel</a>| University of Warsaw  (1960-1965) </b><br> From 1960 to 1968, she worked at the Department of Biochemistry at the University of Warsaw, then became a research fellow at the Institute of Nuclear Research , and in 1982 the Institute of Nuclear Chemistry and Technology established on its basis.<img src='images/universityofwarsaw.JPG' alt='warsaw' width='350px'/>"
     var customStoney2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Florence_Stoney'>Florence Stoney</a> | London School of Medicine for Women (1895-1898) </b><br> She attended the Royal College of Science and, since women in Ireland were unable to study medicine, moved to London to study at the London School of Medicine for Women. She obtained her MBBS with honours in 1895 and a Doctor of Medicine in 1898. <img src='images/LondonSchoolofMedicineForWomen.jpg' alt='lsmw' width='350px'/>"
     var customSzumiel2 = "<b>.</b><a href='https://pl.wikipedia.org/wiki/Irena_Szumiel'>Irena Szumiel</a>| Birth Place <br>Irena Szumiel was born 10 February, 1936 in Warsaw, Poland <img src='images/warsaw.jpg' alt='warsaw2' width='350px'/>"
+   var customFranklin1 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Rosalind_Franklin'>Rosalind Franklin</a>| Birth Place <br>| Birth Place</b><br> Rosalind Franklin was born 25 July 1920 in Notting Hill, London<img src='images/notting hill.jpg' alt='nottinghill' width='350px'/>"
+   var customFranklin2 = "<b>.</b><a href='https://en.wikipedia.org/wiki/Rosalind_Franklin'>Rosalind Franklin</a>| King's Cross College, London (1951) </b><br> She became a research associate at King's College London in 1951 and worked on X-ray diffraction studies, which would eventually facilitate the double helix theory of the DNA <img src='images/king's college.jpg' alt='king' width='350px'/>"
   
     /* Display a blue point marker with pop-up text */
 /*Irène Joliot-Curie*/
@@ -137,10 +139,9 @@ L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
   
   /*Rosalind Franklin*/
   L.marker([51.3026, -0.0739], {icon: houseIcon}).addTo(map)
-  .bindPopup("<b>Rosalind Franklin | Birth Place</b><br> Rosalind Franklin was born 25 July 1920 in Notting Hill, Londond.");
+  .bindPopup(var customFranklin1,customOptions);
   L.marker([48.2132, 16.3601], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Rosalind Franklin | King's Cross College, London (1951) </b><br> She became a research associate at King's College London in 1951 and worked on X-ray diffraction studies, which would eventually facilitate the double helix theory of the DNA");
-  
+  .bindPopup(var customFranklin2,customOptions);
 
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
