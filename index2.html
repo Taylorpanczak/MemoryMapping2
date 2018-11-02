@@ -74,7 +74,9 @@ var boneIcon = L.icon({
         'className' : 'custom'
         }
     var customSzumiel1 = "Irena Szumiel | University of Warsaw  (1960-1965) </b><br> From 1960 to 1968, she worked at the Department of Biochemistry at the University of Warsaw, then became a research fellow at the Institute of Nuclear Research , and in 1982 the Institute of Nuclear Chemistry and Technology established on its basis.<img src='images/universityofwarsaw.JPG' alt='warsaw' width='350px'/>"
-  /* Display a blue point marker with pop-up text */
+    var customStoney2 = "<b>Florence Stoney | London School of Medicine for Women (1895-1898) </b><br> She attended the Royal College of Science and, since women in Ireland were unable to study medicine, moved to London to study at the London School of Medicine for Women. She obtained her MBBS with honours in 1895 and a Doctor of Medicine in 1898. <img src='images/LondonSchoolofMedicineForWomen.jpg' alt='lsmw' width='350px'/>"
+  
+    /* Display a blue point marker with pop-up text */
 /*Irène Joliot-Curie*/
   L.marker([48.8566, 2.3522], {icon: houseIcon}).addTo(map)
   .bindPopup("<b>Irène Joliot-Curie | Birth Place</b><br> Irène Joliot-Curie was born 12 September 1897 in Paris, France.")
@@ -117,8 +119,7 @@ L.marker([52.518056, 13.393333], {icon: boneIcon}).addTo(map)
   L.marker([53.3498, -6.2603], {icon: houseIcon}).addTo(map)
   .bindPopup(customStoney1,customOptions);
   L.marker([51.5256, -0.1233], {icon: boneIcon}).addTo(map)
-  .bindPopup("<b>Florence Stoney | London School of Medicine for Women (1895-1898) </b><br> She attended the Royal College of Science and, since women in Ireland were unable to study medicine, moved to London to study at the London School of Medicine for Women. She obtained her MBBS with honours in 1895 and a Doctor of Medicine in 1898");
-  
+  .bindPopup(customStoney2,customOptions);
   /*Ellen Gleditsh*/
   L.marker([57.8807, 7.4364], {icon: houseIcon}).addTo(map)
   .bindPopup("<b>Ellen Gleditsh | Birth Place</b><br> Ellen Gleditsh was born 29 December 1879 in Mandal, Norway.");
